@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { FaBars, FaTimes, FaPhone } from 'react-icons/fa'
+import { FaBars, FaTimes} from 'react-icons/fa'
 import Link from 'next/link'
 
 
@@ -33,15 +33,13 @@ const Header:  React.FC = () => {
             <ul className={`${mobile ? 'nav-menu' : 'nav-menu show'}`}>
             <Link href="/" onClick={handleMobileChange}> <li className='list-items'>Home</li></Link> 
             <Link href="#about" onClick={handleMobileChange}> <li className='list-items'>About Me</li></Link> 
-            <Link href="#skills" onClick={handleMobileChange}>  <li className='list-items'>Services</li></Link> 
+            <Link href="#services" onClick={handleMobileChange}>  <li className='list-items'>Services</li></Link> 
             <Link href="#projects" onClick={handleMobileChange}> <li className='list-items'>Projects</li></Link> 
-            <Link href="#projects" onClick={handleMobileChange}> <li className='list-items'>Testimonials</li></Link> 
+            <Link href="#testimonies" onClick={handleMobileChange}> <li className='list-items'>Testimonials</li></Link> 
             <Link href="#contact" onClick={handleMobileChange}> <li className='list-items'>Contact</li></Link> 
-            <Link href="MyResume" onClick={handleMobileChange}> <li className='list-items'>Download CV</li></Link> 
+            <Link href="MyResume" onClick={handleMobileChange}> <li className='list-items '>Download CV</li></Link> 
             </ul>
             </div>
-      
-
       
              
     </div>
