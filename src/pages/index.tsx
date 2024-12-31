@@ -1,8 +1,14 @@
+import Header from '@/Component/Header'
 import React from 'react'
 
 const index = () => {
   return (
-    <div>index</div>
+    <div>
+      <Header />
+
+
+
+    </div>
   )
 }
 
