@@ -33,6 +33,7 @@ body{
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   min-height: 100vh;
+  padding: 0 100px;
 }
 
 ::-webkit-scrollbar{
@@ -50,7 +51,6 @@ border-radius: 10px;
   justify-content: space-between;
   background: rgba(249, 246, 246, 0.7);
   align-items: center;
-  padding: 0 100px;
   position: sticky;
   top: 0;
   border-bottom: 3px linear-gradient(180deg, #994f37, #9333ea);
@@ -82,18 +82,24 @@ border-radius: 10px;
 }
 
 .mobile-icon:hover{
-color: rgb(254, 251, 253);
+color: rgb(214, 26, 26);
 }
 
 .home{
   border: 3px solid red;
   display: flex;
+  gap: 40px;
 }
 .homeInfo{
   width: 50%;
 }
 .homePix{
   width: 50%;
+}
+.Pix{
+  border-radius: 50px;
+  width: 200px;
+  margin: auto;
 }
 
 .About{
@@ -197,58 +203,65 @@ color: rgb(254, 251, 253);
 
  /* MOBILE VERSION */
  @media screen and (max-width: 768px){ 
+  body{
+    padding: 10px ;
+  }
   .Header {
-      padding: 0 30px;
       height: 15vh;
   }
 
   .name{
-      padding: 0 10px;
+      /* padding: 0 10px; */
       font-size: x-large;
   }
-  .container{
-    padding: 0 20px;
+  .home{
+    border: 3px solid red;
+    display: flex;
+    flex-direction: column;
   }
+  .homeInfo{
+    width: 100%;
+  }
+  .homePix{
+    width: 100%;
+  }
+ 
   
   .nav-menu {
     /* border: 2px solid green; */
     flex-direction: column;
     position: absolute;
     right: 1000px;
-    top: 100px;
+    top: 95px;
     width: 100vw;
     height: 100vh;
     align-items: center;
     padding: 50px 20px;
-    background: rgba(252, 249, 249, 0.9);
+    /* background: rgba(249, 246, 246, 0.7); */
+    background-color: rgb(188, 227, 36);
     border-radius: 20px;
     z-index: 1000;
     transition: right 0.8s;
   }
 
   .nav-menu.show {
-  right: 0;
+  right: 90;
 
   }
   .mobile-icon{
     display: block;
   }
   
-  .HeroSec{
-    flex-direction: column;
-  }
-  .HeroText{
-    width: 100%;
-   
-  }
-  .HeroPix{
-    width: 100%;
-   
-  }
+ 
   
   .footer{
     flex-direction: column;
    }
+   .footlist{
+    display: block;
+    margin-top: 20px;
+    
+    }
 
    .facebook{
   background-color: #202ccf;
@@ -280,18 +293,6 @@ color: rgb(254, 251, 253);
    }
 
 
-   .HeroSec{
-    flex-direction: column;
-  }
-  .HeroText{
-    width: 100%;
-   
-  }
-  .HeroPix{
-    width: 100%;
-   
-  }
-  
   .About{
     display: flex;
     flex-direction: column;
@@ -304,8 +305,12 @@ color: rgb(254, 251, 253);
     width: 100%;
     text-align: center;
   }
+  .Pix{
+    width: 300px;
+    height: 200px;
+  }
   .myPix{
-    border-radius: 50%;
+    border-radius: 50px;
     width: 100%;
   }
 }
