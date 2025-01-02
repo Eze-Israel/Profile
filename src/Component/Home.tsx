@@ -28,7 +28,7 @@ const Home = () => {
         alt='my pix'
         className='Pix'
         />
-        <div className='flex items-center justify-center gap-0 md:gap-10 mt-4'>
+        <div className='flex items-center justify-center gap-4 md:gap-10 mt-4'>
              <FaFacebook  className='facebook '/>
              <FaTwitter className='twitter' />
              <FaInstagram   className='insta' />

@@ -86,7 +86,7 @@ color: rgb(214, 26, 26);
 }
 
 .home{
-  border: 3px solid red;
+  /* border: 3px solid red; */
   display: flex;
   gap: 40px;
 }
@@ -104,16 +104,16 @@ color: rgb(214, 26, 26);
 
 .About{
   display: flex;
-  padding: 0 100px;
   gap: 20px;
   margin-bottom: 30px;
+  margin-top: 30px;
   
 }
 .AboutDiv{
-  width: 50%;
+  width: 30%;
 }
 .AboutText{
-  width: 50%;
+  width: 70%;
   /* text-align: center; */
   color: black;
   margin-top: 60px;
@@ -127,7 +127,7 @@ color: rgb(214, 26, 26);
 .progress{
   width: 100%;
   height: 20px;
-  background-color: #444;
+  background-color: #f3ebeb;
 
 }
 .progress-fill{
@@ -204,19 +204,19 @@ color: rgb(214, 26, 26);
  /* MOBILE VERSION */
  @media screen and (max-width: 768px){ 
   body{
-    padding: 10px ;
+    padding: 0;
   }
   .Header {
       height: 15vh;
+      /* padding: 0 !important; */
   }
 
   .name{
-      /* padding: 0 10px; */
+      padding: 0 20px;
       font-size: x-large;
   }
   .home{
-    border: 3px solid red;
-    display: flex;
+    padding: 0 20px;
     flex-direction: column;
   }
   .homeInfo{
@@ -245,7 +245,7 @@ color: rgb(214, 26, 26);
   }
 
   .nav-menu.show {
-  right: 90;
+  right: 0;
 
   }
   .mobile-icon{
@@ -259,7 +259,7 @@ color: rgb(214, 26, 26);
    }
    .footlist{
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     
     }
 
@@ -267,26 +267,26 @@ color: rgb(214, 26, 26);
   background-color: #202ccf;
   border-radius: 20px;
   color: white;
-  font-size: 30px;
-  margin: auto;
+  font-size: 25px;
+  
 }
 .linked{
   background-color:white ;
   color: #005bb5;
   border-radius: 2px;
-  font-size: 30px;
-  margin: auto;
+  font-size: 25px;
+  
 }
 .twitter{
   background-color: rgb(66, 65, 65);
   color: white;
   border-radius: 5px;
-  font-size: 30px;
-  margin: auto;
+  font-size: 25px;
+  
 }
  .insta{
-  font-size: 30px;
-  margin: auto;
+  font-size: 25px;
+ 
  }
    .mycontact{
      margin: 0 auto;
@@ -296,21 +296,22 @@ color: rgb(214, 26, 26);
   .About{
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
+    padding: 0 20px;
   }
   .AboutDiv{
     width: 100%;
   }
   .AboutText{
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
   }
   .Pix{
     width: 300px;
     height: 200px;
   }
-  .myPix{
+  .mypix{
     border-radius: 50px;
     width: 100%;
+    margin: auto;
   }
 }
