@@ -40,6 +40,13 @@ const projects = [
   imageUrl:"/images/CBT-EXAM.jpg",
   technologies:['Photoshop', 'illustrator'],
 },
+{
+  title: "Branding Graphic Design", 
+  description: "Graphic Design for branding.",
+  category:"UI/UX",
+  imageUrl:"/images/UXMOB.png",
+  technologies:['Photoshop', 'illustrator'],
+},
 
 ];
 
