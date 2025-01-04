@@ -13,14 +13,14 @@ const projects = [
   technologies:['Figma', 'UI/UX'],
 },
 {
-  title: "Busiiness  Landing Page Design", 
+  title: "Business  Landing Page Design", 
   description: "A sleek business Landing Page.",
   category:"Web Design",
   imageUrl:"/images/Ecomerce2.jpg",
   technologies:['Next.js', 'Tailwind CSS'],
 },
 {
-  title: "Econ Web Page Design", 
+  title: "Ecom Web Page Design", 
   description: "An Ecom Web Page Design.",
   category:"Web Design",
   imageUrl:"/images/Ecomerce.jpg",

@@ -3,7 +3,7 @@ import { useLayoutEffect } from 'react'
 import Link from 'next/link'
 
 const MyResume = () => {
-  const CV = "/PDF/ISRAEL_RESUME2025+.pdf"
+  const CV = "/PDF/ISRAEL_RESUME2025-.pdf"
   useLayoutEffect(() => {
     window.scrollTo(0, 0)
   }, [])
