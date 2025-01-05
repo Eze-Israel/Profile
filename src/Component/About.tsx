@@ -9,22 +9,22 @@ const About = () => {
       className="About">
         <div className="AboutDiv">
         <Image
-         src="/images/passport.jpg"
+         src="/images/testi9.png"
          width={500}
          height={500}
          priority={true}
          alt="my personal photo"
-         className="Pix h-full "
+         className="Pix  "
          />
         </div>
       
         <div className="AboutText">
-          <h2 className=" font-bold text-xl"><b className="font-bold">A</b>bout<b className="font-bold"> M</b>e</h2>
+          <h2 className=" font-bold text-xl md:text-4xl"><b className="font-bold ">A</b>bout<b className="font-bold"> M</b>e</h2>
            <p className="mb-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Consequatur ab possimus nostrum vel obcaecati corporis, animi tenetur iure.</p>
              
            
-            <span >
+            <span>
               UX
              <ProgressBar 
              percentage={90}
@@ -36,7 +36,7 @@ const About = () => {
              percentage={85}
              />     
              </span>
-            <span>
+            <span >
               App Design
              <ProgressBar 
              percentage={95}

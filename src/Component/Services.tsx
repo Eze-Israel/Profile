@@ -36,7 +36,7 @@ const Services = () => {
     <section className='py-16'
     id='services'
     >
-      <SectionTitle title='Services I Offer'/>
+      <SectionTitle title='Services '/>
       <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
          vel aperiam eum voluptatum sequi dignimos sapiente. Quibusdam!</p>
       

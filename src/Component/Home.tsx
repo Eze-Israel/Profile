@@ -16,15 +16,16 @@ const Home = () => {
           <h1 className='text-2xl md:text-6xl font-bold ml-16 md:ml-32 mb-5'>Designer</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             tempore! Sunt cumque cum tempora ipsum nam quo provident quos porro doloribus.</p>
+            <button className='bg-orange-500 p-2 text-white rounded'>Hire Me</button>
         
       </div>
 
 
       <div className='homePix'>
         <Image 
-        src="/images/passport.jpg"
-        width={100}
-        height={100}
+        src="/images/testi9.png"
+        width={500}
+        height={500}
         alt='my pix'
         className='Pix'
         />

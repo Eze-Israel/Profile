@@ -14,7 +14,7 @@ const Contact = () => {
       <form 
       action="https://formspree.io/f/mqazqpyq"
       method="POST"
-      className='form mx-auto'>
+      className='form'>
 
       <div className="my-20">
       <label htmlFor="email">
@@ -24,10 +24,10 @@ const Contact = () => {
         type="email" 
         name="email"
         placeholder='Enter your Email'
-        className="md:h-10 w-85 md:w-1/2 bg-gray-100 rounded mr-5 p-2 md:p-4"
+        className="md:h-13  bg-gray-50 rounded mr-5 p-2 md:p-4 email"
         required
       />
-        <button type="submit" className="p-2 bg-orange-500 text-center text-white rounded ">
+        <button type="submit" className=" p-2 md:p-4 bg-orange-500 text-center text-white rounded mt-3 md:mt-0 ">
         Contact Me
       </button>
       </div>

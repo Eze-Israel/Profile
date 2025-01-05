@@ -12,29 +12,29 @@ const testimonials = [
   {
     name: 'Joe Doe',
     role: 'CEO',
-    feedback: 'Lorem ipsum dolor sit . Quisquam sequi ratione ipsum. Ducimus totam im ',
-    image: '/images/passport.jpg',
+    feedback: 'Lorem ipsum dolor sit . Quisquam sequi ratione ipsum. Ducimus totam im Ducimus totam im bed agfe dety that boakuzea ',
+    image: '/images/testi1.jpg',
 
   },
   {
     name: 'John  Smith',
     role: 'Product Designer',
-    feedback: 'Quisquam sequi ratione ipsum. Ducimus totam im bed agfe dety that boakuzea',
-    image: '/images/passport.jpg',
+    feedback: 'Quisquam sequi ratione ipsum. Ducimus totam im bed agfe dety that boakuzea Ducimus totam im bed agfe dety that boakuzea',
+    image: '/images/testi2.jpg',
 
   },
   {
     name: 'Michael Scott',
     role: 'Manager',
-    feedback: 'Lorem ipsum dolor sit . Quisquam sequi ratione ipsum. Ducimus totam im ',
-    image: '/images/passport.jpg',
+    feedback: 'Lorem ipsum dolor sit . Quisquam sequi ratione ipsum. Ducimus totam im Ducimus totam im bed agfe dety that boakuzea',
+    image: '/images/testi3.jpg',
 
   },
   {
     name: 'Joe Bidden',
     role: 'CEO',
-    feedback: 'Lorem ipsum dolor sit . Quisquam sequi ratione ipsum. Ducimus totam im ',
-    image: '/images/passport.jpg',
+    feedback: 'Lorem ipsum dolor sit . Quisquam sequi ratione ipsum. Ducimus totam im Ducimus totam im bed agfe dety that boakuzea',
+    image: '/images/testi4.jpg',
 
   },
 ]
@@ -50,7 +50,7 @@ const Testimonies = () => {
     <SectionTitle
     title='Testimonials' />
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    <p className='text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
        atque porro ad repellat corporis deserunt, accusantium delectus nisi quo consequatur.</p>
 
     <Swiper
@@ -82,16 +82,19 @@ const Testimonies = () => {
           <Image 
           alt={testimonial.name}
           src={testimonial.image}
-          width={300}
-          height={300}
-          className='sm:w-16 md:w-24 lg:w-36'
+          width={200}
+          height={200}
+          className='testi-pix '
           />
           </div>
 
           <div className='w-full md:w-1/2'>
+           <p className='text-gray-700'>
+            <b className='text-orange-500 text-2xl'>"</b>{testimonial.feedback}
+            <b className='text-orange-500 text-2xl'>"</b>
+           </p>
           <p className='mt-4 font-semibold'> {testimonial.name} </p>
           <p className='text-md text-gray-500'>{testimonial.role} </p>
-          <p className='text-gray-700'>{testimonial.feedback} </p>
           </div>
 
         </div>
