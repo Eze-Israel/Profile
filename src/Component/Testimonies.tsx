@@ -90,8 +90,8 @@ const Testimonies = () => {
 
           <div className='w-full md:w-1/2'>
            <p className='text-gray-700'>
-            <b className='text-orange-500 text-2xl'>"</b>{testimonial.feedback}
-            <b className='text-orange-500 text-2xl'>"</b>
+            <b className='text-orange-500 text-2xl'>&quot;</b>{testimonial.feedback}
+            <b className='text-orange-500 text-2xl'>&quot;</b>
            </p>
           <p className='mt-4 font-semibold'> {testimonial.name} </p>
           <p className='text-md text-gray-500'>{testimonial.role} </p>
