@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { FaBars, FaTimes} from 'react-icons/fa'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 
@@ -23,7 +24,15 @@ const Header:  React.FC = () => {
   return (
     <div className='header'>
       <div>
-      <Link href="/" className="name" onClick={handlelogoname} > <b>M</b>umair</Link>
+      <Link href="/" className="logoPix" onClick={handlelogoname} > 
+      <Image 
+      alt='logo'
+      height={200}
+      width={200}
+      src="/images/logo.png"
+      className='logoPix'
+      />
+      </Link>
       </div>
       <div className="mobile-icon" onClick={handleMobileChange}>
         {mobile ? <FaBars /> : <FaTimes />}
@@ -37,7 +46,8 @@ const Header:  React.FC = () => {
             <Link href="#projects" onClick={handleMobileChange}> <li className='list-items'>Projects</li></Link> 
             <Link href="#testimonies" onClick={handleMobileChange}> <li className='list-items'>Testimonials</li></Link> 
             <Link href="#contact" onClick={handleMobileChange}> <li className='list-items'>Contact</li></Link> 
-            <Link href="MyResume" onClick={handleMobileChange}> <li className='list-items cv'>Download CV</li></Link> 
+            <Link href="MyResume" onClick={handleMobileChange}> 
+            <li className='list-items cv'>Download CV</li></Link> 
             </ul>
             </div>
       

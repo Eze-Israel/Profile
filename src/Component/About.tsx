@@ -9,13 +9,20 @@ const About = () => {
       className="About">
         <div className="AboutDiv">
         <Image
-         src="/images/testi9.png"
+         src="/images/Dpix2.png"
          width={500}
          height={500}
          priority={true}
          alt="my personal photo"
-         className="Pix  "
+         className="Pix abtPix"
          />
+         <Image 
+          alt='rectangle'
+          src="/images/Rectangle.png"
+          width={300}
+          height={300}
+          className='Rect'
+          />
         </div>
       
         <div className="AboutText">
@@ -24,25 +31,25 @@ const About = () => {
              Consequatur ab possimus nostrum vel obcaecati corporis, animi tenetur iure.</p>
              
            
-            <span>
+            <span className="mb-4">
               UX
              <ProgressBar 
              percentage={90}
              />     
              </span>
-            <span>
+            <span className="mb-4">
              Web Design
              <ProgressBar 
              percentage={85}
              />     
              </span>
-            <span >
+            <span className="mb-4">
               App Design
              <ProgressBar 
              percentage={95}
              />     
              </span>
-            <span>
+            <span className="mb-4">
               Graphic Design
              <ProgressBar 
              percentage={94}

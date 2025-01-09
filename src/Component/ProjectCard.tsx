@@ -4,14 +4,14 @@ interface ProjectCardProps {
 title: string;
 description: string;
 imageUrl: string;
-technologies: string[];
+// technologies: string[];
 }
 
 export default function ProjectCard({
       title,
       description,
       imageUrl,
-      technologies,                                                                           
+    //   technologies,                                                                           
 }: ProjectCardProps) {
     return(
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -27,14 +27,14 @@ export default function ProjectCard({
                 </h3>
                 <p className="text-gray-600 m-4"> {description}</p>
                 <div className="flex flex-wrap gap-2">
-                    {technologies.map((tech, index) => (
+                    {/* {technologies.map((tech, index) => (
                         <span key={index}
                         className="bg-gray-200 text:sm font-medium px-2 py-1"
                         >
                             {tech}
 
                         </span>
-                    ))}
+                    ))} */}
 
                 </div>
 

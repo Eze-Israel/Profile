@@ -33,7 +33,6 @@ body{
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   min-height: 100vh;
-  padding: 0 100px;
 }
 
 ::-webkit-scrollbar{
@@ -44,29 +43,71 @@ body{
 background: #f97316;
 border-radius: 10px;
 }
+.swiper-pagination-bullet{
+  background-color: transparent;
+  /* color: #ff6600; */
+  width: 24px;
+  /* rectangle shape created with width and height */
+  height: 12px;
+  opacity: 1;
+  border-radius: 6px;
+  border: 2px solid #ff6600;
+  margin: 0 6px;
+  /* spacing between the dots */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+/* style for active pagination */
+.swiper-pagination-bullet-active{
+  background-color: #ff6600;
+  transform: scale(1.2);
+  border-color: orange;
+  /* sligthly increase size for dots */
+}
+.swiper-pagination-bullet:hover{
+  background-color: #ff9933;
+  /* on hover light orange color */
+}
+/* center the pagination dots */
+.swiper-pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  color: orange;
+  /* space between the testimonial and dots */
+}
 
 
 .header{
   display: flex;
   justify-content: space-between;
-  background: rgba(249, 246, 246, 0.7);
+  background: rgb#fff;
   align-items: center;
   position: sticky;
   top: 0;
   border-bottom: 3px linear-gradient(180deg, #994f37, #9333ea);
   height: 15vh;
   z-index: 900;
+  padding: 0 100px;
+  margin-bottom: 40px;
   
  }
- .name{
+ .logoPix{
   font-size: xx-large;
  }
+ .list-items{
+  padding:  5px;
+ }
+
  .cv{
   background-color: rgb(245, 118, 13);
-  padding: 4px;
+  
   border-radius: 2px;
   height: fit-content;
   text-align: center;
+  border-radius: 5px;
+  color: white;
+  
  }
  .nav-menu {
   list-style: none;
@@ -90,6 +131,7 @@ color: rgb(214, 26, 26);
   display: flex;
   gap: 40px;
   height: fit-content;
+  padding: 0 100px;
 }
 .homeInfo{
   width: 50%;
@@ -102,16 +144,40 @@ color: rgb(214, 26, 26);
   height: fit-content;
 }
 .Pix{
-  border-radius: 50px;
   border-radius: 50%;
   margin: auto;
+  position: relative;
 }
+.Rectangle{
+  position: absolute;
+  left: 550px;
+  height: fit-content;
+  right: 0;
+  bottom: 0;
+  top: -100px;
+  margin: auto;
+}
+.abtPix{
+  position: relative;
+}
+.Rect{
+  position: absolute;
+  /* margin: auto; */
+  margin-top: -420px;
+  left: 200px;
+
+}
+
 
 .About{
   display: flex;
-  gap: 20px;
+  gap: 50px;
+  justify-content: space-between;
   margin-bottom: 30px;
   margin-top: 30px;
+  padding: 0 100px;
+  
+  
   
 }
 .AboutDiv{
@@ -119,9 +185,7 @@ color: rgb(214, 26, 26);
 }
 .AboutText{
   width: 50%;
-  /* text-align: center; */
-  color: black;
-  margin-top: 60px;
+  margin-top: 90px;
 }
 .progress-bar-container {
   width: 100%;
@@ -143,6 +207,15 @@ color: rgb(214, 26, 26);
   justify-content: flex-end;
   padding-right: 10px;
   border-radius: 8px;
+}
+.Service{
+  padding: 0 100px;
+}
+.Project{
+  padding: 0 100px;
+}
+.Testimonial{
+  padding: 0 100px;
 }
 form{
   padding: 0 200px;
@@ -182,26 +255,20 @@ form{
  }
 
 .facebook{
-  background-color: #202ccf;
   border-radius: 20px;
-  color: white;
   font-size: 30px;
 }
 .linked{
-  background-color:white ;
-  color: #005bb5;
+
   border-radius: 2px;
   font-size: 30px;
 }
 .twitter{
-  background-color: rgb(19, 18, 18);
-  color: rgb(250, 246, 246);
   border-radius: 5px;
   font-size: 30px;
 }
  .insta{
   font-size: 30px;
-  color: #f92f0b;
  }
 
 .mycontact{
@@ -224,17 +291,16 @@ form{
 
  /* MOBILE VERSION */
  @media screen and (max-width: 768px){ 
-  body{
-    padding: 0;
-  }
-  .Header {
+  .header {
       height: 15vh;
-      /* padding: 0 !important; */
+      padding: 0 20px;
   }
 
-  .name{
-      padding: 0 20px;
-      font-size: x-large;
+  .logoPix{
+      /* padding: 0 20px; */
+      font-size: large;
+     
+     
   }
   .home{
     padding: 0 20px;
@@ -298,22 +364,16 @@ form{
     }
 
    .facebook{
-  background-color: #202ccf;
   border-radius: 20px;
-  color: white;
   font-size: 25px;
   
 }
 .linked{
-  background-color:white ;
-  color: #005bb5;
   border-radius: 2px;
   font-size: 25px;
   
 }
 .twitter{
-  background-color: rgb(66, 65, 65);
-  color: white;
   border-radius: 5px;
   font-size: 25px;
   
@@ -330,6 +390,7 @@ form{
   .About{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     padding: 0 20px;
   }
   .AboutDiv{
@@ -338,16 +399,48 @@ form{
   .AboutText{
     width: 100%;
     /* text-align: center; */
+    margin-top: 0;
   }
   .Pix{
     width: 300px;
     height: 200px;
+    position: relative;
   }
-  .mypix{
-    border-radius: 50px;
-    width: 100%;
+  
+  .Rectangle{
+    position: absolute;
+    left: 20px;
+    width: fit-content;
+    height: fit-content;
+    right: 0;
+    bottom: 0;
+    top: 450px;
+    margin-top: 30px;
+  }
+  .abtPix{
+    position: relative;
+  }
+  .Rect{
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    top: 750px;
+    /* border: 5px solid red; */
     margin: auto;
+    left: 150px;
+    
+  
   }
+  .Service{
+    padding: 0 20px;
+  }
+  .Project{
+    padding: 0 20px;
+  }
+  .Testimonial{
+    padding: 0 20px;
+  }
+  
   .testimony{
   flex-direction: column;
 }

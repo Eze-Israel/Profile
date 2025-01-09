@@ -9,21 +9,21 @@ const projects = [
   title: "Air calling Landing Page Design", 
   description: "Landing Page for Calling App.",
   category:"Web Design",
-  imageUrl:"/images/mylatestPortfolio.jpg",
+  imageUrl:"/images/aircall.png",
   technologies:['Figma', 'UI/UX'],
 },
 {
   title: "Business  Landing Page Design", 
   description: "A sleek business Landing Page.",
   category:"Web Design",
-  imageUrl:"/images/Ecomerce2.jpg",
+  imageUrl:"/images/businex.png",
   technologies:['Next.js', 'Tailwind CSS'],
 },
 {
   title: "Ecom Web Page Design", 
   description: "An Ecom Web Page Design.",
   category:"Web Design",
-  imageUrl:"/images/Ecomerce.jpg",
+  imageUrl:"/images/Ecom.png",
   technologies:['React', 'Node.js'],
 },
 {
@@ -61,7 +61,7 @@ const Projects = () => {
  )
 
   return (
-    <section className='py-16 bg-gray-50'
+    <section className='py-16 bg-gray-50 Project'
     id='projects'
     >
       <SectionTitle  title='MY PROJECTS'/>
@@ -89,7 +89,7 @@ const Projects = () => {
             title={project.title}
             description={project.description}
             imageUrl={project.imageUrl}
-            technologies={project.technologies}
+            // technologies={project.technologies}
             />
           ))}
 

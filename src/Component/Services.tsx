@@ -8,25 +8,25 @@ const services =[
   {
     title: 'UI/UX',
     description:'Lorem ipsum dolor t amsiet eligendi aut necessitatibus vel in non magni' ,
-    icon:'/images/UXMOB.png',
+    icon:'/images/layer2.png',
 
   },
   {
     title: 'Web Design',
     description:'Lorem ipsum dolor t amsiet eligendi aut necessitatibus vel in non magni' ,
-    icon:'/images/web-design.png',
+    icon:'/images/layer1.png',
 
   },
   {
     title: 'App Design',
     description:'Lorem ipsum dolor t amsiet eligendi aut necessitatibus vel in non magni' ,
-    icon:'/images/app-design.png',
+    icon:'/images/layer4.png',
 
   },
   {
     title: 'Graphic Design',
     description:'Lorem ipsum dolor t amsiet eligendi aut necessitatibus vel in non magni' ,
-    icon:'/images/graphic-design.png',
+    icon:'/images/layer3.png',
 
   },
 ]
@@ -41,10 +41,10 @@ const Services = () => {
          vel aperiam eum voluptatum sequi dignimos sapiente. Quibusdam!</p>
       
     <div
-    className='grid grid-cols-1 md:grid-cols-4 gap-8 mt-8'>
+    className='grid grid-cols-1 md:grid-cols-4 gap-8 mt-8 Service'>
     
 
-   {services.map((service, index)=> (
+   {services.map((service, index) => (
     <div key={index} className='bg-white p-6 rounded-lg shadow-lg flex flex-col items-center'>
      <Image  
      className='w-16 h-16 mb-4'

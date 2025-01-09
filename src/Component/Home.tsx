@@ -16,20 +16,27 @@ const Home = () => {
           <h1 className='text-2xl md:text-6xl font-bold ml-16 md:ml-32 mb-5'>Designer</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             tempore! Sunt cumque cum tempora ipsum nam quo provident quos porro doloribus.</p>
-            <button className='bg-orange-500 p-2 text-white rounded'>Hire Me</button>
+            <button className='bg-orange-500 p-2 text-white rounded mt-6'>Hire Me</button>
         
       </div>
 
 
       <div className='homePix'>
         <Image 
-        src="/images/testi9.png"
+        src="/images/Dpix.png"
         width={500}
         height={500}
         alt='my pix'
-        className='Pix'
+        className='Pix '
         />
-        <div className='flex items-center justify-center gap-4 md:gap-10 mt-4'>
+        <Image 
+        alt='rectangle'
+        src="/images/Rectangle.png"
+        width={300}
+        height={300}
+        className='Rectangle'
+        />
+        <div className='flex items-center justify-center gap-2 md:gap-4 mt-4'>
              <FaFacebook  className='facebook '/>
              <FaTwitter className='twitter' />
              <FaInstagram   className='insta' />

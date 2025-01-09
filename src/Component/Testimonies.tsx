@@ -45,7 +45,7 @@ const Testimonies = () => {
   return (
     <section
     id='testimonies'
-    className='py-16 '
+    className='py-16 Testimonial'
     >
     <SectionTitle
     title='Testimonials' />
@@ -55,6 +55,7 @@ const Testimonies = () => {
 
     <Swiper
     modules={[Pagination, Autoplay, EffectFlip, Scrollbar]}
+
     spaceBetween={30}
     slidesPerView={1}
     loop={true}
@@ -65,7 +66,7 @@ const Testimonies = () => {
     autoplay={{delay: 5000, disableOnInteraction: false, pauseOnMouseEnter: true}}
     speed={1000}
     pagination={{clickable: true, 
-      // el: '.custom-pagination'
+      // el: '.swiper-pagination'
     }}
     // effect='flip'
     effect='fade'
@@ -100,6 +101,7 @@ const Testimonies = () => {
         </div>
         </SwiperSlide>
       ))}
+      {/* <div className='swiper-pagination '></div> */}
     </Swiper>
     </section>
   )
