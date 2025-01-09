@@ -45,7 +45,7 @@ const Testimonies = () => {
   return (
     <section
     id='testimonies'
-    className='py-16 Testimonial'
+    className='py-16 mt-6 Testimonial'
     >
     <SectionTitle
     title='Testimonials' />

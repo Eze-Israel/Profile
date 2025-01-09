@@ -409,13 +409,14 @@ form{
   
   .Rectangle{
     position: absolute;
-    left: 20px;
+    left: 45px;
     width: fit-content;
     height: fit-content;
-    right: 0;
+    right: 45px;
     bottom: 0;
-    top: 450px;
+    top: 460px;
     margin-top: 30px;
+    border: 5px solid green;
   }
   .abtPix{
     position: relative;
@@ -424,10 +425,11 @@ form{
     position: absolute;
     height: fit-content;
     width: fit-content;
-    top: 750px;
-    /* border: 5px solid red; */
+    top: 770px;
+    border: 5px solid red;
     margin: auto;
-    left: 150px;
+    left: 45px;
+    right: 45px;
     
   
   }
