@@ -416,7 +416,7 @@ form{
     bottom: 0;
     top: 460px;
     margin-top: 30px;
-    border: 5px solid green;
+    /* border: 5px solid green; */
   }
   .abtPix{
     position: relative;
@@ -426,7 +426,7 @@ form{
     height: fit-content;
     width: fit-content;
     top: 770px;
-    border: 5px solid red;
+    /* border: 5px solid red; */
     margin: auto;
     left: 45px;
     right: 45px;
