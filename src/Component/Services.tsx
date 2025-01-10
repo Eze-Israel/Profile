@@ -14,7 +14,7 @@ const services =[
   {
     title: 'Web Design',
     description:'Lorem ipsum dolor t amsiet eligendi aut necessitatibus vel in non magni' ,
-    icon:'/images/layer1.png',
+    icon:'/images/Layer1.png',
 
   },
   {
