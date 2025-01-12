@@ -30,7 +30,7 @@ const About = () => {
            <p className="mb-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Consequatur ab possimus nostrum vel obcaecati corporis, animi tenetur iure.</p>
              
-           
+           <span className="flex flex-col gap-2">
             <span className="mb-4">
               UX
              <ProgressBar 
@@ -54,6 +54,7 @@ const About = () => {
              <ProgressBar 
              percentage={94}
              />     
+             </span>
              </span>
            
         </div>

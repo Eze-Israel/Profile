@@ -2,15 +2,17 @@ import Image from "next/image";
 
 interface ProjectCardProps {
 title: string;
-description: string;
+// description: string;
 imageUrl: string;
+category: string;
 // technologies: string[];
 }
 
 export default function ProjectCard({
       title,
-      description,
+    //   description,
       imageUrl,
+      category,
     //   technologies,                                                                           
 }: ProjectCardProps) {
     return(
@@ -22,10 +24,10 @@ export default function ProjectCard({
                 layout="fill" objectFit="cover" />
             </div>
             <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2">
-               {title}
+                <h3 className="text-gray-600 m-4 text-orange-500">
+               {category}
                 </h3>
-                <p className="text-gray-600 m-4"> {description}</p>
+                <p className="text-xl font-semibold mb-2"> {title}</p>
                 <div className="flex flex-wrap gap-2">
                     {/* {technologies.map((tech, index) => (
                         <span key={index}

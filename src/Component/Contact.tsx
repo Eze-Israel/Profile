@@ -7,7 +7,7 @@ const Contact = () => {
     <div id='contact'
     className='p-10 md:p-0'
     >
-      <h1 className='text-center text-2xl md:text-4xl font-bold '>Lets Design Together</h1>
+      <h1 className='text-center text-2xl md:text-4xl font-bold my-16 '>Lets Design Together</h1>
       <p className='text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
         Corrupti totam facere fugit suscipit magnam necessitatibus,</p>
         

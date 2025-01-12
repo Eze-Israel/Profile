@@ -1,12 +1,23 @@
 import React from 'react'
 import {  FaLinkedin,FaInstagram, FaFacebook, FaTwitter,} from 'react-icons/fa';
 import Link from 'next/link'
+import Image from 'next/image';
 
 const Footer = () => {
    const  date = new Date().getFullYear();
   return (
   <div className='footer'>
-    <Link href="/"  > <h1 className="name"><b className='text-4xl'>M</b>umair</h1> </Link>
+         <div>
+        <Link href="/" >
+          <Image 
+          alt='logo'
+          height={200}
+          width={200}
+          src="/images/logo.png"
+          className='mx-auto'
+          />
+           </Link>
+           </div>
     <div className='navigation'>
       <ul className='nav-menu-show'>
         <Link href= "/"> <li className='footlist'>Home</li></Link>

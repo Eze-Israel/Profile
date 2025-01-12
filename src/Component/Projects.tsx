@@ -86,9 +86,10 @@ const Projects = () => {
           {filteredProjects.map((project, index)=> (
             <ProjectCard 
             key={index}
-            title={project.title}
-            description={project.description}
+            // description={project.description}
             imageUrl={project.imageUrl}
+            category={project.category}
+            title={project.title}
             // technologies={project.technologies}
             />
           ))}
