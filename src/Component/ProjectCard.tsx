@@ -16,7 +16,7 @@ export default function ProjectCard({
     //   technologies,                                                                           
 }: ProjectCardProps) {
     return(
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white overflow-hidden">
             <div className="relative w-full h-48">
                 <Image
                 src={imageUrl}

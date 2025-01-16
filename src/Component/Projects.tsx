@@ -64,15 +64,15 @@ const Projects = () => {
     <section className='py-16 bg-gray-50 Project'
     id='projects'
     >
-      <SectionTitle  title='MY PROJECTS'/>
+      <SectionTitle  title='My Projects'/>
       <p className='text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
          Modi dolorum illo suscipit dignissimos architecto? Quidem eius </p>
-         <div className='flex justify-center gap-4 mb-8'>
+         <div className='flex justify-center gap-4 my-12'>
           {categories.map(category => (
             <button key={category}
             onClick={() => setActiveCategory(category)}
-            className={`sm:px-0 md:px-4 py-2 rounded ${activeCategory === category 
-              ? 'bg-orange-500 text-white' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'
+            className={`sm:px-0 md:px-4 py-2 rounded-lg ${activeCategory === category 
+              ? 'bg-orange-500 text-white' : 'bg-blue-50 text-gray-800 hover:bg-gray-300'
             }`}
             >
               {category}
