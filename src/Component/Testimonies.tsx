@@ -78,8 +78,8 @@ const Testimonies = () => {
     >
       {testimonials.map((testimonial, index)=> (
         <SwiperSlide key={index} className='custom-pagination'>
-        <div className='bg-white shadow-lg rounded-lg overflow-hidden p-6 testimony'>
-          <div className='w-full md:w-1/2'>
+        <div className='bg-gray-50 shadow-lg rounded-lg overflow-hidden p-6 testimony mt-14'>
+          <div className='w-full md:w-1/2 '>
           <Image 
           alt={testimonial.name}
           src={testimonial.image}

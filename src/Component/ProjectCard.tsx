@@ -1,33 +1,36 @@
 import Image from "next/image";
 
 interface ProjectCardProps {
-title: string;
+// title: string;
 // description: string;
 imageUrl: string;
-category: string;
+// category: string;
 // technologies: string[];
 }
 
 export default function ProjectCard({
-      title,
+    //   title,
     //   description,
       imageUrl,
-      category,
+    //   category,
     //   technologies,                                                                           
 }: ProjectCardProps) {
     return(
         <div className="bg-white overflow-hidden">
-            <div className="relative w-full h-48">
+            <div className="relative w-full">
                 <Image
                 src={imageUrl}
-                alt={title}
-                layout="fill" objectFit="cover" />
+                // alt={title}
+                alt="pix"
+                width={400}
+                height={400}
+                />
             </div>
             <div className="p-6">
-                <h3 className="text-gray-600 m-4 text-orange-500">
-               {category}
+                <h3 className=" m-4 text-orange-500">
+               {/* {category} */}
                 </h3>
-                <p className="text-xl font-semibold mb-2"> {title}</p>
+                {/* <p className="text-xl font-semibold mb-2"> {title}</p> */}
                 <div className="flex flex-wrap gap-2">
                     {/* {technologies.map((tech, index) => (
                         <span key={index}

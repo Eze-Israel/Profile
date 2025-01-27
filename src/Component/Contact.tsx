@@ -24,10 +24,10 @@ const Contact = () => {
         type="email" 
         name="email"
         placeholder='Enter your Email'
-        className="md:h-13  bg-gray-50 rounded mr-5 p-2 md:p-4 email"
+        className="md:h-11  !bg-gray-50 rounded-lg mr-5 p-2 md:p-4 email"
         required
       />
-        <button type="submit" className=" p-2 md:p-4 bg-orange-500 text-center text-white rounded mt-3 md:mt-0 ">
+        <button type="submit" className=" p-2 md:p-2 md:px-2 bg-orange-500 text-center text-white rounded-lg mt-3 md:mt-0 ">
         Contact Me
       </button>
       </div>

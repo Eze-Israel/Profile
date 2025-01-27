@@ -72,7 +72,7 @@ const Projects = () => {
             <button key={category}
             onClick={() => setActiveCategory(category)}
             className={`sm:px-0 md:px-4 py-2 rounded-lg ${activeCategory === category 
-              ? 'bg-orange-500 text-white' : 'bg-blue-50 text-gray-800 hover:bg-gray-300'
+              ? 'bg-orange-500 text-white' : 'bg-gray-100 text-gray-800 hover:bg-gray-300'
             }`}
             >
               {category}
@@ -88,8 +88,8 @@ const Projects = () => {
             key={index}
             // description={project.description}
             imageUrl={project.imageUrl}
-            category={project.category}
-            title={project.title}
+            // category={project.category}
+            // title={project.title}
             // technologies={project.technologies}
             />
           ))}
