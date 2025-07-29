@@ -46,7 +46,7 @@ const Header:  React.FC = () => {
             <Link href="#projects" onClick={handleMobileChange}> <li className='list-items'>Projects</li></Link> 
             <Link href="#testimonies" onClick={handleMobileChange}> <li className='list-items'>Testimonials</li></Link> 
             <Link href="#contact" onClick={handleMobileChange}> <li className='list-items'>Contact</li></Link> 
-            <Link href="MyResume" onClick={handleMobileChange}> 
+            <Link href="/" onClick={handleMobileChange}> 
             <li className='list-items cv'>Download CV</li></Link> 
             </ul>
             </div>
